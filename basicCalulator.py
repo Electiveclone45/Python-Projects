@@ -9,7 +9,7 @@ num2 = int(input("Enter another number: "))
 operation = input("Enter an operation: ")
 
 
-#Conditions for those operations provided their is correct input by user.
+#Conditions for those operations provided there is correct input by user.
 if operation == "+":
   print(num1 + num2)
 elif operation == "-":
