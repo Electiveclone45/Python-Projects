@@ -140,7 +140,6 @@ else:
 
 #Case sensitivity dealt with so that the user can enter the day of the week in any case.
 
-else:
-  print(f"{userName} , WTF! wrong planet bro, try again?!")
 
-#Case sensitivity dealt with so that the user can enter the day of the week in any case.
+
+
