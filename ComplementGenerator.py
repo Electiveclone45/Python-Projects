@@ -51,60 +51,60 @@ currentDay = input("Enter the current day of the week: ")
 if currentDay == "Sunday":
   print("A day to unwind, bask in the sun, and savor leisure.")
   # Secondary input taken from within nested control flow
-  favouriteThing = input("Enter your favourite thing: ")
-  if favouriteThing == "Relax and Unwind.":
+  favouriteThing = (input("Enter your favourite thing: ")).lower()
+  if favouriteThing == "relax and unwind":
     print(f"Yawn, {userName} is boring!")
-  elif favouriteThing == "Outdoor Adventures ":
+  elif favouriteThing == "outdoor adventures":
     print(f" {userName} likes living life to the extreme !")
-  elif favouriteThing == "Family Time":
+  elif favouriteThing == "family time":
     print(f"Nice {userName}, love is the key my friend!")
   else:
     print(f"Fair enough {userName}, each to their own!")
 
 elif currentDay == "Monday":
   print("The start of the week, where possibilities bloom anew.")
-  favouriteThing = input("Enter your favourite thing: ")
-  if favouriteThing == "Work and Productivity":
+  favouriteThing = (input("Enter your favourite thing: ")).lower()
+  if favouriteThing == "work and productivity":
     print(f"{userName} likes to stay focused and productive!")
-  elif favouriteThing == "":
+  elif favouriteThing == "Exercise":
     print(f"{userName} is getting physical!")
-  elif favouriteThing == "Plan Ahead":
+  elif favouriteThing == "plan ahead":
     print(f"{userName} is very organized!")
   else:
     print("Fair enough, each to their own!")
 
 elif currentDay == "Tuesday":
   print("A steady rhythm, like a midweek heartbeat.")
-  favouriteThing = input("Enter your favourite thing: ")
-  if favouriteThing == "Team Sports":
+  favouriteThing = (input("Enter your favourite thing: ")).lower()
+  if favouriteThing == "team sports":
     print(f"Team work makes the dreamwork {userName}!")
-  elif favouriteThing == "Cooking and Dining":
+  elif favouriteThing == "cooking and dining":
     print(f"Cooking and eating are the best {userName}!")
-  elif favouriteThing == "Learn Something New":
+  elif favouriteThing == "learn something new":
     print(f"New beginnings for {userName}. That's what it's all about!")
   else:
     print("Fair enough, each to their own!")
 
 elif currentDay == "Wedesday":
-  favouriteThing = input("Enter your favourite thing: ")
   print("The hump day, where we climb toward the weekend.")
-  if favouriteThing == "Midweek Break":
+  favouriteThing = (input("Enter your favourite thing: ")).lower()
+  if favouriteThing == "midweek break":
     print(f"{userName} is taking it easy! What a sluggard!")
-  elif favouriteThing == "Socialize":
+  elif favouriteThing == "socialize":
     print(f"{userName} has friends? Hard to believe! :D ")
-  elif favouriteThing == "Creative Pursuits":
+  elif favouriteThing == "creative pursuits":
     print(f"{userName} speaks with their heart!")
   else:
     print("Fair enough, each to their own!")
 
 elif currentDay == "Thursday":
   print("Anticipation fills the air; the weekend beckons.")
-  favouriteThing = input("Enter your favourite thing: ")
-  if favouriteThing == "Drinking":
+  favouriteThing = (input("Enter your favourite thing: ")).lower()
+  if favouriteThing == "drinking":
     print(f"Don't throw your life away {userName}")
-  elif favouriteThing == "Volunteering":
+  elif favouriteThing == "volunteering":
     print(f"Volunteering is a great way to make a difference {userName}!")
-  elif favouriteThing == "Cultural Activities":
+  elif favouriteThing == "cultural activities":
     print(
         f"Cultural activities are a great way to connect with others {userName}!"
     )
@@ -113,27 +113,32 @@ elif currentDay == "Thursday":
 
 elif currentDay == "Friday":
   print("Cheers to freedom, laughter, and late-night adventures.")
-  favouriteThing = input("Enter your favourite thing: ")
-  if favouriteThing == "Dancing":
+  favouriteThing = (input("Enter your favourite thing: ")).lower()
+  if favouriteThing == "dancing":
     print(f"Dancing is a great way to express yourself {userName}!")
-  elif favouriteThing == "Movie Night":
+  elif favouriteThing == "movie night":
     print(f"Why not watch a movie {userName}?")
-  elif favouriteThing == "Date Night":
+  elif favouriteThing == "date night":
     print(f"You're too good for them! Find another one {userName}!")
   else:
     print("Fair enough, each to their own!")
 
 elif currentDay == "Saturday":
   print("A canvas for dreams, where time dances freely.")
-  favouriteThing = input("Enter your favourite thing: ")
-  if favouriteThing == "Outdoor Sports":
+  favouriteThing = (input("Enter your favourite thing: ")).lower()
+  if favouriteThing == "outdoor sports":
     print(f"{userName} is an outdoorsy type!")
-  elif favouriteThing == "Shopping":
+  elif favouriteThing == "shopping":
     print(f"Shopping is a great way to spend time {userName}!")
-  elif favouriteThing == "Home Improvement":
+  elif favouriteThing == "home improvement":
     print(f"{userName}, just be thankful to have a home!")
   else:
     print("Fair enough, each to their own!")
+
+else:
+  print(f"{userName} , WTF! wrong planet bro, try again?!")
+
+#Case sensitivity dealt with so that the user can enter the day of the week in any case.
 
 else:
   print(f"{userName} , WTF! wrong planet bro, try again?!")
