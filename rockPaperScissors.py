@@ -56,12 +56,6 @@ while score1 < 5 and score2 < 5:
     print("Invalid Move Player 1")
     break
 
-if score1 == 5:
-  print("Player 1 wins!")
-elif score2 == 5:
-  print("Player 2 wins!")
 
 print("Game Over!")
 
-
-print("Game Over!")
