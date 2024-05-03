@@ -29,7 +29,7 @@ while score1 < 5 and score2 < 5:
     elif player2Move == "S":
       print("Player1's paper is cut into tiny pieces by Player2's Scissors!")
       score2 += 1
-    elif player2Move == "S":
+    elif player2Move == "R":
       print("Player2's Rock is smothered by Player1's Paper!")
       score1 += 1
     else:
@@ -37,11 +37,10 @@ while score1 < 5 and score2 < 5:
       break
 
   elif player1Move == "S":
-    if player2Move == "R":
+    if player2Move == "S":
+      print("Ka-Shing! Scissors bounce off each other like a dodgy sword fight!")
+    elif player2Move == "R":
       print("Player 2's Rock makes metal-dust out of Player1's Scissors")
-    elif player2Move == "S":
-      print(
-          "Ka-Shing! Scissors bounce off each other like a dodgy sword fight!")
       score2 += 1
     elif player2Move == "P":
       print("Player1's Scissors make confetti out of Player2's paper!")
@@ -54,4 +53,5 @@ while score1 < 5 and score2 < 5:
     break
 
 print("Game Over!")
+
 
