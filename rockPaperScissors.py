@@ -2,17 +2,14 @@ print("Rock, paper, scissors game")
 print("Select your move (R, P or S)")
 print()
 
-player1Move = input("Player 1 : ").upper()
-player2Move = input("Player 2 : ").upper()
-print(player1Move, player2Move)
-
-score1 = 0
+score1 = 0 
 score2 = 0
 
 while score1 < 5 and score2 < 5:
+
   player1Move = input("Player 1 : ").upper()
   player2Move = input("Player 2 : ").upper()
-
+  
   if player1Move == "R":
     if player2Move == "R":
       print("You both picked Rock, draw!")
@@ -55,7 +52,6 @@ while score1 < 5 and score2 < 5:
   else:
     print("Invalid Move Player 1")
     break
-
 
 print("Game Over!")
 
